@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALERTE CRITIQUE - Saturation Disque SRV-DB-PROD-01</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #0f172a; font-family: Arial, Helvetica, sans-serif;">
+
+  <!-- Table principale de centrage -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #0f172a; padding: 24px 0;">
+    <tr>
+      <td align="center" valign="top">
+
+        <!-- Sous-tableau conteneur : max 600px -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; background-color: #ffffff;">
+
+          <!-- EN-TETE CRITIQUE -->
+          <tr>
+            <td style="background-color: #dc2626; padding: 0;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding: 16px 24px 8px 24px; text-align: center;">
+                    <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+                      <tr>
+                        <td style="background-color: #7f1d1d; padding: 4px 14px;">
+                          <span style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #fca5a5; letter-spacing: 3px; text-transform: uppercase;">&#9888; CRITIQUE</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 10px 24px 4px 24px; text-align: center;">
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; color: #ffffff; letter-spacing: 1px;">ALERTE SOC / NOC</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 4px 24px 20px 24px; text-align: center;">
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #fecaca;">Saturation critique de l&rsquo;espace disque</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- BANDEAU HORODATAGE -->
+          <tr>
+            <td style="background-color: #1e293b; padding: 8px 24px; text-align: center;">
+              <span style="font-family: 'Courier New', Courier, monospace; font-size: 12px; color: #94a3b8;">2026-07-02 03:47:22 UTC &mdash; G&eacute;n&eacute;r&eacute; par le syst&egrave;me de monitoring automatique</span>
+            </td>
+          </tr>
+
+          <!-- CORPS DU MESSAGE -->
+          <tr>
+            <td style="padding: 24px; background-color: #ffffff;">
+
+              <p style="margin: 0 0 18px 0; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #111827; line-height: 1.7;">
+                Une anomalie critique a &eacute;t&eacute; d&eacute;tect&eacute;e sur le serveur de base de donn&eacute;es de production.
+                <strong style="color: #dc2626;">Une intervention imm&eacute;diate est requise.</strong>
+              </p>
+
+              <!-- Bloc terminal CLI -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #0f172a; margin: 0 0 20px 0;">
+                <!-- Barre de titre terminal -->
+                <tr>
+                  <td style="background-color: #1e293b; padding: 6px 14px;">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="width: 10px; height: 10px; background-color: #ef4444; border-radius: 50%; margin-right: 6px;"></td>
+                        <td style="width: 8px;"></td>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 11px; color: #64748b;">monitoring@SOC:~$ df -h /dev/sda3</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- Donnees systeme -->
+                <tr>
+                  <td style="padding: 16px 14px;">
+                    <table width="100%" cellpadding="5" cellspacing="0" border="0">
+                      <tr>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #64748b; padding: 3px 10px 3px 0; white-space: nowrap; vertical-align: top;">H&ocirc;te</td>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #e2e8f0; font-weight: bold; padding: 3px 0; vertical-align: top;">SRV-DB-PROD-01</td>
+                      </tr>
+                      <tr>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #64748b; padding: 3px 10px 3px 0; white-space: nowrap; vertical-align: top;">Adresse IP</td>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #e2e8f0; font-weight: bold; padding: 3px 0; vertical-align: top;">10.0.1.47</td>
+                      </tr>
+                      <tr>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #64748b; padding: 3px 10px 3px 0; white-space: nowrap; vertical-align: top;">Partition</td>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #e2e8f0; font-weight: bold; padding: 3px 0; vertical-align: top;">/dev/sda3</td>
+                      </tr>
+                      <tr>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #64748b; padding: 3px 10px 3px 0; white-space: nowrap; vertical-align: top;">Utilisation</td>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 16px; color: #ef4444; font-weight: bold; padding: 3px 0; vertical-align: top;">96%</td>
+                      </tr>
+                      <tr>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #64748b; padding: 3px 10px 3px 0; white-space: nowrap; vertical-align: top;">Capacit&eacute; totale</td>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #e2e8f0; font-weight: bold; padding: 3px 0; vertical-align: top;">2.0 TB</td>
+                      </tr>
+                      <tr>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #64748b; padding: 3px 10px 3px 0; white-space: nowrap; vertical-align: top;">Espace disponible</td>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #f97316; font-weight: bold; padding: 3px 0; vertical-align: top;">81.9 GB</td>
+                      </tr>
+                      <tr>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #64748b; padding: 3px 10px 3px 0; white-space: nowrap; vertical-align: top;">Seuil d&rsquo;alerte</td>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #fbbf24; font-weight: bold; padding: 3px 0; vertical-align: top;">90%</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Bloc impact potentiel -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #fef2f2; border-left: 4px solid #dc2626; margin: 0 0 20px 0;">
+                <tr>
+                  <td style="padding: 14px 16px;">
+                    <p style="margin: 0 0 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #991b1b;">Impact potentiel :</p>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="padding: 2px 0; vertical-align: top; width: 16px;">
+                          <span style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #b91c1c;">&#8226;</span>
+                        </td>
+                        <td style="padding: 2px 0;">
+                          <span style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #7f1d1d; line-height: 1.5;">Arr&ecirc;t imminent du service de base de donn&eacute;es PostgreSQL</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 2px 0; vertical-align: top;">
+                          <span style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #b91c1c;">&#8226;</span>
+                        </td>
+                        <td style="padding: 2px 0;">
+                          <span style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #7f1d1d; line-height: 1.5;">Corruption possible des &eacute;critures en cours de transaction</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 2px 0; vertical-align: top;">
+                          <span style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #b91c1c;">&#8226;</span>
+                        </td>
+                        <td style="padding: 2px 0;">
+                          <span style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #7f1d1d; line-height: 1.5;">Indisponibilit&eacute; de l&rsquo;application de production</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Actions recommandees -->
+              <p style="margin: 0 0 10px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #111827;">Actions recommand&eacute;es :</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 0 0 8px 0;">
+                <tr>
+                  <td style="padding: 5px 0; vertical-align: top; width: 28px;">
+                    <span style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #dc2626; font-weight: bold;">1.</span>
+                  </td>
+                  <td style="padding: 5px 0;">
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #374151; line-height: 1.5;">Purger les fichiers de logs obsol&egrave;tes : <span style="font-family: 'Courier New', Courier, monospace; background-color: #f1f5f9; padding: 1px 5px; color: #dc2626; font-size: 12px;">/var/log/postgresql/</span></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px 0; vertical-align: top;">
+                    <span style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #dc2626; font-weight: bold;">2.</span>
+                  </td>
+                  <td style="padding: 5px 0;">
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #374151; line-height: 1.5;">Identifier et supprimer les dumps temporaires dans <span style="font-family: 'Courier New', Courier, monospace; background-color: #f1f5f9; padding: 1px 5px; color: #dc2626; font-size: 12px;">/tmp/</span></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px 0; vertical-align: top;">
+                    <span style="font-family: 'Courier New', Courier, monospace; font-size: 13px; color: #dc2626; font-weight: bold;">3.</span>
+                  </td>
+                  <td style="padding: 5px 0;">
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #374151; line-height: 1.5;">Planifier une extension du volume ou une migration de donn&eacute;es si n&eacute;cessaire</span>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- BOUTON CTA - construit avec une cellule de tableau -->
+          <tr>
+            <td style="padding: 4px 24px 28px 24px; background-color: #ffffff; text-align: center;">
+              <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+                <tr>
+                  <td style="background-color: #dc2626; text-align: center; padding: 14px 36px;">
+                    <a href="https://admin.srv-db-prod-01.local/ssh-console" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; color: #ffffff; text-decoration: none; letter-spacing: 0.5px;">&#9654;&nbsp; Acc&eacute;der &agrave; la console SSH Web</a>
+                  </td>
+                </tr>
+              </table>
+              <p style="margin: 10px 0 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #9ca3af;">
+                ou acc&eacute;dez au <a href="https://admin.srv-db-prod-01.local/dashboard" style="color: #6b7280; text-decoration: underline;">dashboard d&rsquo;administration</a> pour purger les logs
+              </p>
+            </td>
+          </tr>
+
+          <!-- PIED DE PAGE -->
+          <tr>
+            <td style="background-color: #1e293b; padding: 16px 24px; text-align: center;">
+              <p style="margin: 0 0 6px 0; font-family: 'Courier New', Courier, monospace; font-size: 11px; color: #64748b;">
+                Ce message a &eacute;t&eacute; g&eacute;n&eacute;r&eacute; automatiquement par le syst&egrave;me de monitoring SOC/NOC.
+              </p>
+              <p style="margin: 0; font-family: 'Courier New', Courier, monospace; font-size: 11px; color: #475569;">
+                Ne pas r&eacute;pondre &agrave; cet e-mail &nbsp;&bull;&nbsp; Incidents : <span style="color: #64748b;">soc-noc@entreprise.local</span>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+        <!-- /sous-tableau conteneur -->
+
+      </td>
+    </tr>
+  </table>
+  <!-- /table principale -->
+
+</body>
+</html>
